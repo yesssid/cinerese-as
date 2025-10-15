@@ -1,0 +1,52 @@
+/* styles/style.css - estilos complementarios */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0f0f10; /* si quieres el look oscuro como tu screenshot, cambiar aquí */
+  color: #eaeaea;
+  margin: 0;
+}
+
+/* Tarjetas (efecto hover) */
+.movie-card {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  border-radius: 8px;
+  background: #121214; /* card oscuro sobre fondo */
+}
+.movie-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+}
+
+/* Imagen de poster: adapta el tamaño y mantiene proporción */
+.movie-poster {
+  height: 260px; /* ajusta según prefieras */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Títulos y textos dentro de la card */
+.card-title {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+}
+.card-text {
+  font-size: 0.82rem;
+  color: #bfc5c9;
+}
+
+/* Footer: iconos sociales */
+.social-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: none;
+  opacity: 0.95;
+}
+
+/* Ajustes responsive: reducir altura en dispositivos pequeños */
+@media (max-width: 575.98px) {
+  .movie-poster { height: 180px; }
+}
